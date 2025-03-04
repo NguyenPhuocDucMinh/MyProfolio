@@ -1,0 +1,324 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --main-text-color: #333;
+    --main-link-color: #007bff;
+    --main-link-hover-color: #0056b3;
+    --main-border-color: #ccc;
+    --main-border-radius: 5px;
+    --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --main-transition: 0.3s;
+
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+hr {
+    width: 70%;
+    height: 2px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.header {
+    display: grid;
+    text-align: center;
+    background-color: #333;
+    color: var(--main-bg-color);
+    grid-template-columns: 30% 40% 30%;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    grid-column: 3;
+}
+
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    display: none; 
+}
+
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+
+.menu a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+
+}
+
+.intro {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 7% 40% 50%;
+    align-content: center;
+    margin-top: 5%;
+}
+
+.intro img {
+    display: block;
+    margin: auto;
+    grid-column: 2;
+    width: max-content;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 4px solid var(--main-text-color);
+    align-self: center;
+}
+
+.intro .introText {
+    grid-column: 3;
+}
+
+.intro button {
+    width: 30%;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.intro button:hover {
+    background-color: #ccc;
+}
+
+.main .content {
+    grid-column: 2;
+}
+
+.content .skills {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    align-content: center;
+
+}
+
+.skills .skill:nth-child(even) {
+    grid-column: 3;
+}
+
+.skills .skill {
+    grid-column: 2;
+    text-align: center;
+}
+
+.skill .progress {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 30% 70%;
+    margin-left: 10%;
+}
+
+progress {
+    grid-column: 2;
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill img {
+    width: 60%;
+    height: 60%;
+}
+
+
+.main .education {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px 40px;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    left: 0;
+    text-align: right;
+}
+
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #3498db;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(odd) .timeline-content::after {
+    right: 100%;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+    left: 100%;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.main .myProjects {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.footer {
+    display: grid;
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 20px;
+}
+
+.footer a h4{
+    color: #ccc;
+    margin: 10px;
+}
+
+@media screen and (max-width: 772px) {
+
+    .header{
+        grid-template-columns: 40% 40% 20%;
+    }
+
+    .header .h1{
+        margin-left: 5%;
+    }
+
+    .intro{
+        grid-template-columns: 10% 80% 10%;
+        text-align: center;
+    }
+
+    .intro .img{
+        grid-column: 1/span 3;
+        width: 100%;
+        height: 100%;
+    }
+
+    .intro .introText{
+        grid-column: 2;
+    }
+
+    .intro button{
+        width: 100px;
+        margin: 10px;
+    }
+
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .content{
+        text-align: center;
+    }
+
+    .content .skills .skill{
+        grid-column: 2/ span 2;
+        margin: 20px;
+    }
+
+    .timeline {
+        padding: 10px 0;
+    }
+
+    .timeline-item {
+        width: 100%;  /* Chiếm toàn bộ chiều rộng */
+        left: 0 !important; /* Đẩy về bên trái */
+        text-align: left; /* Căn chữ về trái */
+        padding: 10px 20px; /* Giảm padding */
+    }
+
+    .timeline-content::after {
+        left: 100%; /* Mũi tên ở bên trái */
+        right: auto;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+    }
+
+    .timeline::before {
+        left: 20px; /* Di chuyển đường timeline sang trái */
+    }
+
+}
