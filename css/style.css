@@ -10,10 +10,17 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+  
+
 body {
-    overflow-x: hidden;
-    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
     margin: 0px;
+    padding: 0px;
 }
 
 div {
@@ -222,12 +229,14 @@ progress {
 }
 
 .footer {
+    position:sticky;
     display: grid;
     background-color: #333;
     color: #ccc;
     text-align: center;
     margin-top: 5%;
     padding-bottom: 20px;
+
 }
 
 .footer a h4{

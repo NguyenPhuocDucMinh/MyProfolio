@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="css/styleBlog.css">
+  
+</head>
+
+<body>
+  <header>
+    <h1 id="top">Car gallery</h1>
+  </header>
+
+  <main>
+    <p>Car web site</p>
+
+    <p>Super cars collection</p>
+
+    <div class="grid">
+      <figure>
+        <img src="images/pexels-chaitaastic-2475808.jpg" alt="Alfa Romeo 4C sports car" width="200" onclick="openLightbox(this)">
+        <figcaption>alfa-romeo-4c</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pexels-alex-amorales-321095-909907.jpg" alt="Audi A7 pack RS7 in a scenic setting" width="200" onclick="openLightbox(this)">
+        <figcaption>Audi A7 pack RS7</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pexels-cesarperez209-733745.jpg" alt="Dodge Challenger Muscle Car in motion" width="200" onclick="openLightbox(this)">
+        <figcaption>Dodge Challenger Muscle Car</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pexels-jmark-253096.jpg" alt="Classic Lada car" width="200" onclick="openLightbox(this)">
+        <figcaption>Lada</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pexels-mayday-1545743.jpg" alt="Audi r8 red" width="200" onclick="openLightbox(this)">
+        <figcaption>Audi r8 red</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pexels-mikebirdy-116675.jpg" alt=" Range Rover Evoque" width="200" onclick="openLightbox(this)">
+        <figcaption> Range Rover Evoque</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pexels-mikebirdy-170811.jpg" alt="BMW-320i-GT-1400731969" width="200" onclick="openLightbox(this)">
+        <figcaption>BMW-320i-GT-1400731969</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pexels-mikebirdy-3729464.jpg" alt="MERCEDES-AMG GT R" width="200" onclick="openLightbox(this)">
+        <figcaption>MERCEDES-AMG GT R</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pexels-sarmad-mughal-94606-305070.jpg" alt="Audi black car" width="200" onclick="openLightbox(this)">
+        <figcaption>Audi black car</figcaption>
+      </figure>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-img" alt=""> 
+      <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+      <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src = "js/scriptBlog.js"></script>
+  </main>
+
+  <footer>
+    <a href="#top">Jump to the Top</a>
+  </footer>
+</body>
+
+</html>
