@@ -2,147 +2,89 @@
 <html lang="vi">
 
 <head>
-  <meta="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Minh'site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh's Site</title>
     <link rel="stylesheet" href="css/style.css">
-   
 </head>
 
 <body>
-  <div class="header">
-
-    <h1>DucMinh</h1>
-
-    <div class="navBar">
-      <button class="menu-toggle" onclick="">&#9776;</button> 
-      <nav class = "menu">
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blogs</a>
-        <a href="https://github.com/NguyenPhuocDucMinh">Personnal</a>
-      </nav>
-    </div>
-    <script src = "js/script.js"></script>
-  </div>
-
-  <div class="main">
-
-    <div class="intro">
-
-      <img src="images/avatar.jpg" alt="Avatar">
-
-      <div class="introText">
-        <h1>Welcome to my blog</h1>
-        <p>Create for fun</p>
-
-        <nav>
-          <a href="#skills"> <button>Skills</button></a>
-          <a href="#education"> <button>Education</button></a>
+    <header class="header">
+        <h1>DucMinh</h1>
+        <nav class="navBar">
+            <button class="menu-toggle">&#9776;</button>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="chatBotClient.html">Blogs</a>
+                <a href="https://github.com/NguyenPhuocDucMinh">Personal</a>
+            </div>
         </nav>
-
-      </div>
-    </div>
-
-    <div class="content">
-
-      <h1>About me</h1>
-      <hr>
-      <p>paragraph</p>
-      <h2>My skills</h2>
-      <div id = "skills" class="skills">
-       
-        <div class="skill">
-          <img src="images/html.png" alt="HTML">
-          <h3>HTML</h3>
-          <div class="progress">
-            <h3>Level</h3>
-            <progress value="60" max="100"></progress>
-          </div>
-        </div>
-
-        <div class="skill">
-          <img src="images/CSS.png" alt="CSS">
-          <h3>CSS</h3>
-          <div class="progress">
-            <h3>Level</h3>
-            <progress value="60" max="100"></progress>
-          </div>
-        </div>
-
-        <div class="skill">
-          <img src="images/java.jpg" alt="java">
-          <h3>Java</h3>
-          <div class="progress">
-            <h3>Level</h3>
-            <progress value="70" max="100"></progress>
-          </div>
-        </div>
-
-        <div class="skill">
-          <img src="images/C.png" alt="C/C++">
-          <h3>C/C++</h3>
-          <div class="progress">
-            <h3>Level</h3>
-            <progress value="65" max="100"></progress>
-          </div>
-        </div>
-      </div>
-      <div id = "education" class="education">
-        <h2>Education</h2><hr>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>2022-Now</h3>
-              <p><b>University</b><br> software engineer major</p>
+    </header>
+    
+    <main class="main">
+        <section class="intro">
+            <img src="images/avatar.jpg" alt="Avatar">
+            <div class="introText">
+                <h1>Welcome to my blog</h1>
+                <p>Create for fun</p>
+                <nav>
+                    <a href="#skills"><button>Skills</button></a>
+                    <a href="#education"><button>Education</button></a>
+                </nav>
             </div>
-          </div>
+        </section>
 
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>2019-2022</h3>
-              <p><b>High school</b><br>province high school</p>
+        <section class="content">
+            <h1>About Me</h1>
+            <hr>
+            <p>Paragraph</p>
+            
+            <h2>My Skills</h2>
+            <div id="skills" class="skills">
+                <div class="skill">
+                    <img src="images/html.png" alt="HTML">
+                    <h3>HTML</h3>
+                    <progress value="60" max="100"></progress>
+                </div>
+                <div class="skill">
+                    <img src="images/CSS.png" alt="CSS">
+                    <h3>CSS</h3>
+                    <progress value="60" max="100"></progress>
+                </div>
+                <div class="skill">
+                    <img src="images/java.jpg" alt="Java">
+                    <h3>Java</h3>
+                    <progress value="70" max="100"></progress>
+                </div>
+                <div class="skill">
+                    <img src="images/C.png" alt="C/C++">
+                    <h3>C/C++</h3>
+                    <progress value="65" max="100"></progress>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+            
+            <h2>Education</h2>
+            <hr>
+            <div id="education" class="education">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>2022 - Now</h3>
+                        <p><b>University</b><br>Software Engineering Major</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2019 - 2022</h3>
+                        <p><b>High School</b><br>Province High School</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </div>
-
-    <!-- <div id="MyProjects" class="myProjects">
-      <h1>My projects</h1>
-      <hr>
-      <div class="project">
-        <img src="project1.jpg" alt="Project1">
-        <div>
-          <h3>Project1</h3>
-          <p>information</p>
-        </div>
-        <div>
-          <button>
-            <a href="Project1.html">Detail</a>
-          </button>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="project2.jpg" alt="Project2">
-        <div>
-          <h3>Project2</h3>
-          <p>information</p>
-        </div>
-        <div>
-          <button>
-            <a href="Project2.html">Detail</a>
-          </button>
-        </div>
-      </div>
-    </div> -->
-  </div> 
-
-  <div class="footer">
-    <h4>Minh.N.P.D</h4>
-    <h5>from 2024-DM@gmail.com</h5>
-  </div>
+    <footer class="footer">
+        <h4>Minh.N.P.D</h4>
+        <h5>From 2024 - DM@gmail.com</h5>
+    </footer>
+    
+    <script src="js/script.js"></script>
 </body>
-
 </html>
