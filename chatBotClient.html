@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot AI - Mistral</title>
+    <link rel="stylesheet" href="css/chatBotClient.css">
+</head>
+
+<body>
+    <h2>Chatbot AI - Mistral</h2>
+    <h3>Enter your nickname to start chatting</h3>
+    <input type="text" id="userName" placeholder="enter your nick name..." onkeypress="enterUserName(event)">
+    <div id="container">
+        <div id="chatbox"></div>
+        <input type="text" id="message" placeholder="Nhập tin nhắn..." onkeypress="handleKeyPress(event)">
+        <button onclick="sendMessage()">Gửi</button>
+    </div>
+    <script src="js/aichatbot.js"></script>
+</body>
+
+</html>
